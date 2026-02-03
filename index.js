@@ -11,7 +11,7 @@ app.listen(port, () => {
 });
 
 // Your Discord bot logic goes below...
-const { Client } = require('discord.js');
+
 // ... rest of your code
 
 require("dotenv").config();
