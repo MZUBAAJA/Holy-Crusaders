@@ -1,4 +1,18 @@
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
 
+app.get('/', (req, res) => {
+  res.send('Bot is online!');
+});
+
+app.listen(port, () => {
+  console.log(`Web server running on port ${port}`);
+});
+
+// Your Discord bot logic goes below...
+const { Client } = require('discord.js');
+// ... rest of your code
 
 require("dotenv").config();
 const { Client, GatewayIntentBits, Partials, REST, Routes } = require("discord.js");
