@@ -1,13 +1,4 @@
-const express = require('express');
-const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Bot is alive!');
-});
-
-app.listen(8080, () => {
-  console.log('Keep-alive server is running on port 8080');
-});
 
 require("dotenv").config();
 const { Client, GatewayIntentBits, Partials, REST, Routes } = require("discord.js");
